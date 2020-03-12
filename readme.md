@@ -2,4 +2,4 @@
 
 Este es el código fuente de http://otecald.atspace.com/
 
-Página trasladada a GitHub: https://otecald.atspace.io/
+Página trasladada a GitHub: https://otecald.github.io/
