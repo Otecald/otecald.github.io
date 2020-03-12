@@ -1,0 +1,29 @@
+﻿.headers {
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	z-index:1
+}
+.Normal {
+	color: #FFFFFF
+}
+body {
+	background-repeat: repeat-y;
+	background-color: #000;
+	background-attachment: fixed
+}
+body,td,th {
+	font-weight: bold;
+	color: #FFFFFF
+}
+a:link{text-decoration: none;color:#AABBCC}
+a:visited{text-decoration: none;color:#778899}
+a:hover {text-decoration: underline;color:#DDEEFF}
+a:active {text-decoration: underline;color:#556677}
+
+.yt{
+	position:relative;
+	float: left;
+	z-index:0
+}

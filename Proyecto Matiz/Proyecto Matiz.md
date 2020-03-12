@@ -1,0 +1,1 @@
+Proyecto Matiz es un proyecto en javascript que intenta cambiar la matiz del archivo "sprite.png", para que no sea necesario los archivos "sprite_green.png" y "sprite_red.png".
