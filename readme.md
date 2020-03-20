@@ -16,4 +16,5 @@ Página alternativa en GitHub Pages: https://arteze.github.io/
 ## Subproyectos
 
  - Proyecto Matiz: En colaboración con JH (José Hernaldo Aguirre)
-   - https://otecald.github.io/Proyecto%20Matiz/
+   - https://otecald.github.io/proyecto_matiz
+
