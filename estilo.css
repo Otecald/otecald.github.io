@@ -37,6 +37,7 @@ a:active{
     display: inline-grid;
     margin-left: 10px;
     margin-right: 10px;
+    border: 1px solid;
 }
 .manito{
 	cursor: pointer;
