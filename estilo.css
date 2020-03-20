@@ -1,29 +1,47 @@
-﻿.headers {
-	position:fixed;
-	top:0;
-	left:0;
-	width:100%;
-	z-index:1
+﻿.headers{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
 }
-.Normal {
-	color: #FFFFFF
+.Normal{
+	color: #FFFFFF;
 }
-body {
+body{
 	background-repeat: repeat-y;
 	background-color: #000;
-	background-attachment: fixed
+	background-attachment: fixed;
 }
-body,td,th {
+body,td,th{
 	font-weight: bold;
-	color: #FFFFFF
+	color: #FFFFFF;
 }
-a:link{text-decoration: none;color:#AABBCC}
-a:visited{text-decoration: none;color:#778899}
-a:hover {text-decoration: underline;color:#DDEEFF}
-a:active {text-decoration: underline;color:#556677}
-
+a:link{
+	text-decoration: none;
+	color: #AABBCC;
+}
+a:visited{
+	text-decoration: none;
+	color: #778899;
+}
+a:hover{
+	text-decoration: underline;
+	color: #DDEEFF;
+}
+a:active{
+	text-decoration: underline;
+	color: #556677;
+}
 .yt{
-	position:relative;
+	position: relative;
 	float: left;
-	z-index:0
+	z-index: 0;
 }
+.manito{
+	cursor: pointer;
+}
+.contenido{
+	display: none;
+}
+
