@@ -34,12 +34,9 @@ a:active{
 	color: #556677;
 }
 .yt{
-	position: relative;
-	float: left;
-	z-index: 0;
-	left: 50%;
-	height: auto;
-	border: 1px solid;
+    display: inline-grid;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .manito{
 	cursor: pointer;
