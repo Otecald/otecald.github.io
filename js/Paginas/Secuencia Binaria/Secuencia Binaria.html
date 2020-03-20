@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<script src="11-9-13.js" type="application/javascript"></script>
+		<script type="application/javascript">
+			function zzz(a,b)
+			{
+				b*=1
+				aa=sequencenumber(a,b)
+				ttt.innerHTML=aa[0]
+				//ggg.innerHTML+="\n"+aa[0]
+				vvv.innerHTML=aa[1]
+				yyy.innerHTML="Largo: "+aa[3]
+				fff.innerHTML="Válidos: "+aa[2]
+			}
+			function zaz()
+			{
+				for(var a=0;a<aaa.value;a++)
+				{
+					zzz(ttt.innerHTML,vvv.innerHTML)
+				}
+				
+			}
+		</script>
+	</head>
+	<body style="margin-left:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; background-color:#DEF">
+	<button onclick=zaz()>Generar</button>, Veces:<input value=1 id=aaa></input>
+	<p id=vvv>1</p>
+	<p id=fff>Válidos: 1</p>
+	<p id=yyy>Largo: 1</p>
+	<textarea disabled id=ttt>0</textarea>
+	</body>
+</html>

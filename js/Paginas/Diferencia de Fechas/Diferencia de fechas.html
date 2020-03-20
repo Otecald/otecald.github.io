@@ -1,0 +1,29 @@
+﻿<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" ></meta>
+		<title>Diferencia de Fechas</title>
+		<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAA71JREFUOE8NzotTE3QAwPGfMkFCQZiPHSpKGBxaTOSUywAfU9BLiDx2gLoBcxOcimUIg6ZwC+OlMQiEwFAwT4tQEpU0Osil+DiwoaDiI4PwxSu5MCj1m5+/4DPmm7WC4RGJsB1jJ5wktsLFxka4gHB+8VI4jvwnHIZHxMt/x4nRsRPFC4mTwH6SsLFzEpKxdsL2lRAie43AqBhHZogjxWFTqFHK+DVKxu3IyTwNd2R0pYTnS+0ZULjy5H0fHkcq6NVE8Cxezag2BqF/PVAF2xK/xhljpIzijTOo3TqD5u3TuLttEv06CX0xDjyMc6M7YSHdSaE8ytAwuGcbI5mJiFXqMSwNHc8apZQ43XTSDLMpyplF9ZeuNJW60FZiyw3zBK7vdac9fzG39yt5cGgLvUcNPD9mQPgmOjNfJSVA50ZYiiea/LnsPOJN1hkPSi2uHL08kZpGKXX1npyrew/LaSWtP+m53ZTMwws7EZ4mP+Yl+bIo1Z/leQGEVgYRdTYITcu76O/PJ+mpO7u7PMjp8KWoZRmVl9dy/GocP7ZuxtKegPAq0SLPU7MoX83islgCqzUENcaypG0DS3siWPb3akL7g9nwx2r0N8Mx/BaFqSWG3GuxFN5UIwIrD6IoK0JRbiaoch/+1XuR1+fidTGL2bc+Y/pDI17dn+B/KxHFNT1hzQkom3REN2pYd0GFUB+yojl4EVVFI2sPnEVRcZoFVad487s6JtfX4WCpZaqlCveGYubWZTO/2ojv4R3IK/W8fSwekV36lJzyLtJLOkn8op3oLCvLTVbkphvMyOnEueAOsv1XcCuuZ475MJ7ZZjzSM5i5K5mppmTEycJhTpT0UVXQTb7pHmk77rBRe49QVTeLo/uRq4eQxz/AV38Fn80n8d5Yjvu6LGRKI05RuxHtRYO0lj2myXyf48YODuiukxPWgSHwLgl+T1AtGCJySRfhwS2EhJwiYEU58oA9eCxMQ+a3C/FX4e/0lHbSkWfl0s5LnFtvoWbJeQ57N1Mma8Ms7SRztpVk7/NseucEynlfseKtTPzdUvGZakS8+LyBZ7kN9GScoVNfjTW8iqsLv6Z5VgUXJhzhF9safnD5ngrXo+S5lZM8cy9a2W4inVOIsHs9eJVUwD+GYgYSC3i0IYuulZ/ywCeJLteP6bHfwZ+SVNod0zk/JYNa2S7Kp6WQK91O+oStpEs+QrBex6h6C0ORegZWaej1j6Z/zocMTgnj+fgPGLFR0ucQw/1JWlqlOn520VLrpOHYG3F8a7OJ/wGPZVs2Dp7qgwAAAABJRU5ErkJggg==">
+		</link>
+	</head>
+	<script src=diffecha.js type=text/javascript></script>
+	<input disabled size="18" style=text-align:center id="resudif"></input>
+	<input disabled size="18" style=text-align:center id="añosdif"></input>	
+	<input disabled size="35" style=text-align:center id="fechado"></input>		
+	<div>
+		<table>
+			<tr style=text-align:center><td>Día</td><td>Mes</td><td>Año</td><td>Fecha</td></tr>
+			<tr>
+				<td><input onkeyup="comprobar()" value=1 size="2" style=text-align:center id="día1"></input></td>
+				<td><input onkeyup="comprobar()" value=1 size="2" style=text-align:center id="mes1"></input></td>
+				<td><input onkeyup="comprobar()" value=1 size="16" style=text-align:center id="año1"></input></td>
+				<td><input disabled size="4" style=text-align:center value="Fecha 1"></input></td></tr>
+			<tr>
+				<td><input onkeyup="comprobar()" value=21 size="2" style=text-align:center id="día2"></input></td>
+				<td><input onkeyup="comprobar()" value=12 size="2" style=text-align:center id="mes2"></input></td>
+				<td><input onkeyup="comprobar()" value=2012 size="16" style=text-align:center id="año2"></input></td>
+				<td><input disabled size="4" style=text-align:center value="Fecha 2"></input></td></tr>
+		</table>
+	</div>
+	<textarea disabled size="33" style=text-align:right;height:150px id="debug"></textarea>
+	<script>inicio()</script>
+</html>
