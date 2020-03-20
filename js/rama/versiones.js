@@ -1,5 +1,5 @@
 ﻿var datosVersiones=[
-	{versión:"1.16",fecha:"2020/03/20 Viernes",descripción:"<a href='https://github.com/Otecald/otecald.github.io/'>Agregada versión GitHub</a>."},
+	{versión:"1.16",fecha:"2020/03/20 Viernes",descripción:"<a target='_blank' href='https://github.com/Otecald/otecald.github.io/'>Agregada versión GitHub</a>."},
 	{versión:"1.15",fecha:"2016/08/27 22:30",descripción:"Cambiada la categoría Javascript por programación."},
 	{versión:"1.14",fecha:"2016/08/27 17:03",descripción:"Agregado mi canal de Youtube"},
 	{versión:"1.13",fecha:"2016/08/27",descripción:"Quitado fondo."},
