@@ -41,7 +41,10 @@ a:active{
 .manito{
 	cursor: pointer;
 }
-.contenido{
+.contenido_oculto{
 	display: none;
+}
+.contenido_mostrado{
+	display: block;
 }
 
