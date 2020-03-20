@@ -60,7 +60,7 @@ function generarProgramación()
 		}
 		enlace=hospedaje+enlace
 		foto=miniatura+actual.foto		
-		salida+="<table width=\"300px\" border=\"1\" class=\"yt\"><tr><td>"+título+"</td></tr><tr><td>"+texto+"</td></tr><tr><td><a target=\"_blank\" href=\""+enlace+"\" ><img src=\""+foto+"\" ></img></a></td></tr></table>"
+		salida += '<table width="300px" class="yt"><tr><td>' + título + '</td></tr><tr><td>' + texto + '</td></tr><tr><td><a target="_blank" href="' + enlace + '" ><img src="' + foto + '" ></img></a></td></tr></table>'
 	}
 	return salida
 }

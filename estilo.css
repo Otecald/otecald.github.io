@@ -37,6 +37,9 @@ a:active{
 	position: relative;
 	float: left;
 	z-index: 0;
+	left: 50%;
+	height: auto;
+	border: 1px solid;
 }
 .manito{
 	cursor: pointer;
