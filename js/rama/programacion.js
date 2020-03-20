@@ -24,11 +24,6 @@
 		descripción:"Javascript que obtiene la diferencia que hay entre dos fechas.",
 		foto:"js/proyecto/Diferencia%20de%20Fechas/Thumb.png",
 		enlace:"js/proyecto/Diferencia%20de%20Fechas/Diferencia%20de%20fechas.html"
-	},{
-		título:"Predictor de Quiniela",
-		descripción:"Javascript que intenta mostrar una estadística de la Quiniela.",
-		foto:"js/proyecto/Quiniela/Thumb.png",
-		enlace:"rawgit Quiniela/HTML.html"
 	}
 ]
 
