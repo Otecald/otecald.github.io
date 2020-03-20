@@ -2,32 +2,32 @@
 	{
 		título:"Chatovod Mod",
 		descripción:"Extensión del Chrome que le da mejoras a Chatovod.",
-		foto:"js/Paginas/Chatovod/Chatovod_Mod/Thumb.png",
-		enlace:"js/Paginas/Chatovod/Chatovod_Mod/Chatovod_Mod.html"
+		foto:"js/proyecto/Chatovod/Chatovod_Mod/Thumb.png",
+		enlace:"js/proyecto/Chatovod/Chatovod_Mod/Chatovod_Mod.html"
 	},{
 		título:"Bot conversacional para Chatovod",
 		descripción:"Bot para Chatovod, OtecaldBot (no funciona)",
-		foto:"js/Paginas/OtecaldBot/Thumb.png",
-		enlace:"js/Paginas/OtecaldBot/Bot.html"
+		foto:"js/proyecto/OtecaldBot/Thumb.png",
+		enlace:"js/proyecto/OtecaldBot/Bot.html"
 	},{
 		título:"Secuencia Binaria",
 		descripción:"Javascript que genera una secuencia binaria irracional única, parecida a pi.",
-		foto:"js/Paginas/Secuencia Binaria/Thumb.png",
-		enlace:"js/Paginas/Secuencia Binaria/Secuencia Binaria.html"
+		foto:"js/proyecto/Secuencia Binaria/Thumb.png",
+		enlace:"js/proyecto/Secuencia Binaria/Secuencia Binaria.html"
 	},{
 		título:"Base 64 hacia palabras de Wikcionario y viceversa.",
 		descripción:"Convierte código base 64 a palabras de Wikcionario y palabras a base 64.",
-		foto:"js/Paginas/Base64_Wikcionario/Thumb.png",
+		foto:"js/proyecto/Base64_Wikcionario/Thumb.png",
 		enlace:"rawgit Base64_hacia_Palabras/HTML.html"
 	},{
 		título:"Diferencia de Fechas",
 		descripción:"Javascript que obtiene la diferencia que hay entre dos fechas.",
-		foto:"js/Paginas/Diferencia%20de%20Fechas/Thumb.png",
-		enlace:"js/Paginas/Diferencia%20de%20Fechas/Diferencia%20de%20fechas.html"
+		foto:"js/proyecto/Diferencia%20de%20Fechas/Thumb.png",
+		enlace:"js/proyecto/Diferencia%20de%20Fechas/Diferencia%20de%20fechas.html"
 	},{
 		título:"Predictor de Quiniela",
 		descripción:"Javascript que intenta mostrar una estadística de la Quiniela.",
-		foto:"js/Paginas/Quiniela/Thumb.png",
+		foto:"js/proyecto/Quiniela/Thumb.png",
 		enlace:"rawgit Quiniela/HTML.html"
 	}
 ]
