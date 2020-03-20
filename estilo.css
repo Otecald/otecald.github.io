@@ -47,4 +47,7 @@ a:active{
 .mostrado{
 	display: block;
 }
+.contenedor{
+	text-align: center;
+}
 
