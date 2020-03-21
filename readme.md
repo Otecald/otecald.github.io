@@ -28,6 +28,7 @@ Colaboración entre _ArtEze (Emiliano Ezequiel Parenti)_ y _JH (José Hernaldo A
 
  - _GitHub Pages:_ https://otecald.github.io/el_guerrero_de_la_lanza/
  - _Proyecto:_ https://github.com/otecald/el_guerrero_de_la_lanza
+ - _Bitbucket:_ https://bitbucket.org/ArtEze/el_guerrero_de_la_lanza/
 
  ### Proyecto Matiz: Proyecto derivado
 
