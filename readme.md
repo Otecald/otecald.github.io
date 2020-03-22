@@ -11,14 +11,14 @@ Organización de _ArtEze_ en _GitHub_.
 ## Página de ArtEze en GitHub
 
  - _GitHub Pages:_ https://arteze.github.io/
- - _Proyecto:_ https://github.com/ArtEze/arteze.github.io
+ - _Proyecto:_ https://github.com/arteze/arteze.github.io
 
 ## Subproyectos
 
 ### Charlavod
 
  - _GitHub Pages:_ https://arteze.github.io/charlavod/
- - _Proyecto:_ https://github.com/ArtEze/charlavod
+ - _Proyecto:_ https://github.com/arteze/charlavod
 
 ### Proyecto Matiz
 
@@ -28,7 +28,7 @@ Colaboración entre _ArtEze (Emiliano Ezequiel Parenti)_ y _JH (José Hernaldo A
 
  - _GitHub Pages:_ https://otecald.github.io/el_guerrero_de_la_lanza/
  - _Proyecto:_ https://github.com/otecald/el_guerrero_de_la_lanza
- - _Bitbucket:_ https://bitbucket.org/ArtEze/el_guerrero_de_la_lanza/
+ - _Bitbucket:_ https://bitbucket.org/arteze/el_guerrero_de_la_lanza/
 
  ### Proyecto Matiz: Proyecto derivado
 
