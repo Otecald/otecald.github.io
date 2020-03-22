@@ -52,7 +52,7 @@ function generarProgramación()
 		if(encuentraTexto)
 		{
 			enlace=enlace.split("rawgit ")[1]
-			hospedaje="https://rawgit.com/ArtEze/Otecald/master/Javascript/Proyectos/"
+			hospedaje="https://otecald.github.io/js/proyecto/"
 		}
 		else
 		{
