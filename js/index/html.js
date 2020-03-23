@@ -74,6 +74,7 @@ function cargar_versión()
 	var versión = contenido.querySelector("div").textContent.split(" - ")[0]
 	var actual = salida + versión
 	div.innerHTML = actual
+	mostrar(div)
 }
 function cargar_todo()
 {
