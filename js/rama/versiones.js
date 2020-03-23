@@ -24,13 +24,11 @@ function generar_versiones(contenido){
 	var div_a = document.createElement("div")
 	datos_versiones.map(x=>{
 		var div_b = document.createElement("div")
-
 		div_b.setAttribute("align","left")
 		div_b.innerHTML = obtener_valores_de_objeto(x).join(" - ")
-		console.error(div_b,document.querySelector(".contenido"))
-
 		div_a.appendChild(div_b)
 	})
 	contenido.appendChild(div_a)
+	console.error("Vez",document.querySelector(".contenido").textContent)
 	return contenido
 }
