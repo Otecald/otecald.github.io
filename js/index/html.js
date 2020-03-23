@@ -44,12 +44,12 @@ function mostrar(esto)
 	var título_youtube = "Mis videos de Youtube"
 	cambiar_visibilidad_contenido(contenido,id)
 	if(!está_cargado){
+		contenido.classList.add("cargado")
 		switch(id){
 			case 1:generar_versiones   (contenido);break;
 			case 2:generar_youtube     (contenido,título_youtube);break;
 			case 3:generar_programación(contenido);break;
 		}
-		contenido.classList.add("cargado")
 	}
 }
 function color(esto,booleano)
@@ -66,16 +66,11 @@ function color(esto,booleano)
 }
 function cargar_versión()
 {
-	console.log("Cargando versión")
-	var contenido = document.querySelector(".contenido")
-	generar_versiones(contenido)
-
-	var div = document.querySelector("#v1")
-	var salida="Otecald v"
-	var versión = contenido.querySelector("div").textContent.split(" - ")[0]
-	var actual = salida + versión
-	div.innerHTML = actual
 	mostrar(div)
+	var mensaje = [document.title,"v"].join("\x20")
+	var texto_versión = document.querySelector(".contenido").textContent.split(" - ")[0]
+	var texto_versión_actual = mensaje + texto_versión
+	document.querySelector("#v1").innerHTML = texto_versión_actual
 }
 function cargar_todo()
 {
