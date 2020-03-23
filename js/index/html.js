@@ -109,7 +109,7 @@ function iniciar(callback,puede_depurar){
 				console.log(iniciado,contador)
 			}
 		}
-	})
+	},20)
 	return intervalo
 }
 iniciar(cargar_todo)
