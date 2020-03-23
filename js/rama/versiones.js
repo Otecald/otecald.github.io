@@ -21,12 +21,12 @@ function obtener_valores_de_objeto(x){
 }
 function generar_versiones(contenido)
 {
-	var div_a = document.createElement(div)
+	var div_a = document.createElement("div")
 	datos_versiones.map(x=>{
 		if(fecha==undefined){
 			fecha = ""
 		}
-		var div_b = document.createElement(div)
+		var div_b = document.createElement("div")
 
 		div_b.setAttribute("align","left")
 		div_b.innerHTML = obtener_valores_de_objeto(x).join(" - ")
