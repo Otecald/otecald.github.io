@@ -79,6 +79,12 @@ function cargar_todo()
 	cargar_versión()
 }
 function iniciar(callback,opciones){
+	/* Opciones:
+		var opciones = {
+			puede_depurar: true | false
+			, milisegundos: 10 | 20 | 50 | 100 // ...
+		}
+	*/	
 	var iniciado = false
 	var contador = 0
 	var errores = []
@@ -110,8 +116,4 @@ function iniciar(callback,opciones){
 	},opciones && opciones.milisegundos?opciones.milisegundos:0)
 	return intervalo
 }
-var opciones_iniciar = {
-	milisegundos: 100,
-	puede_depurar: false
-}
-iniciar(cargar_todo,opciones_iniciar)
+iniciar(cargar_todo)
