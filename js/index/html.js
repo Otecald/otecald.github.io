@@ -66,11 +66,14 @@ function color(esto,booleano)
 }
 function cargar_versión()
 {
-	mostrar1.innerHTML=generar_versiones()
-	var salida="Versión actual: "
-	var versión=mostrar1.getElementsByTagName("div")[0].innerHTML.split(" ")[0]
-	var actual=salida+versión
-	v1.innerHTML=actual
+	var contenido = document.querySelector(".contenido")
+	generar_versiones(contenido)
+
+	var versión = document.querySelector("#v1")
+	var salida="Otecald v"
+	var versión = contenido.querySelector("div").textContent.split(" - ")[0]
+	var actual = salida + versión
+	versión.innerHTML = actual
 }
 function cargar_todo()
 {
