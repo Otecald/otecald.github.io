@@ -69,11 +69,11 @@ function cargar_versión()
 	var contenido = document.querySelector(".contenido")
 	generar_versiones(contenido)
 
-	var versión = document.querySelector("#v1")
+	var div = document.querySelector("#v1")
 	var salida="Otecald v"
 	var versión = contenido.querySelector("div").textContent.split(" - ")[0]
 	var actual = salida + versión
-	versión.innerHTML = actual
+	div.innerHTML = actual
 }
 function cargar_todo()
 {
