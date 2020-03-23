@@ -80,7 +80,7 @@ function generar_youtube(contenido)
 
 		tr.appendChild(td)
 		tabla.appendChild(tr)
-		div_texto.appendChild(tabla)	
+		div.appendChild(tabla)	
 	})
 	div_h1.appendChild(h1)
 	div.appendChild(div_h1)
