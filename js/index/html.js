@@ -22,7 +22,7 @@ function mostrar_contenido(id){
 		agregar_clase(".contenido","mostrado")
 	}
 }
-﻿function cambiar_visibilidad_contenido(contenido){
+function cambiar_visibilidad_contenido(contenido){
 	var id = contenido.id
 	var condición_1 = contenido.classList.contains("oculto")
 	var condición_2 = contenido.classList.contains("mostrado")
@@ -52,6 +52,18 @@ function mostrar(esto)
 		contenido.classList.add("cargado")
 	}
 }
+function color(esto,booleano)
+{
+	if(booleano)
+	{
+		esto.style.color="7fffe"
+		esto.style.cursor="hand"
+	}
+	else
+	{
+		esto.style.color="7fffe"
+	}
+}
 function cargar_versión()
 {
 	mostrar1.innerHTML=generar_versiones()
@@ -64,16 +76,21 @@ function cargar_todo()
 {
 	cargar_versión()
 }
-function color(esto,booleano)
-{
-	if(booleano)
-	{
-		esto.style.color="7FFFFF"
-		esto.style.cursor="hand"
-	}
-	else
-	{
-		esto.style.color="FFFFFF"
-	}
+function iniciar(callback,mostrar_error){
+	var iniciado = false
+	var intervalo = setInterval(function(){
+		try{
+			callback()
+			iniciado = true
+		}catch(e){
+			if(mostrar_error){
+				console.log(e)
+			}
+		}
+		if(iniciado){
+			clearInterval(intervalo)
+		}
+	})
+	return intervalo
 }
-
+iniciar(cargar_todo)
