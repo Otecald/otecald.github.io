@@ -92,7 +92,7 @@ function iniciar(callback,puede_depurar){
 			++contador
 			if(contador==1000){
 				clearInterval(intervalo)
-				(function mostrar_errores(){
+				var depurado = (function mostrar_errores(){
 					if(errores.length>0){
 						console.log(errores.shift())
 						setTimeout(mostrar_errores,50)
