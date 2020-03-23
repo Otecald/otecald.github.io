@@ -66,12 +66,12 @@ function color(esto,booleano)
 }
 function cargar_versión()
 {
-	var div = document.querySelector(".contenido")
-	mostrar(div)
+	var versión = document.querySelector("#v1")
+	mostrar(versión)
 	var mensaje = [document.title,"v"].join("\x20")
 	var texto_versión = div.textContent.split(" - ")[0]
 	var texto_versión_actual = mensaje + texto_versión
-	document.querySelector("#v1").innerHTML = texto_versión_actual
+	versión.innerHTML = texto_versión_actual
 }
 function cargar_todo()
 {
