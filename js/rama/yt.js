@@ -39,6 +39,7 @@ function generar_youtube(contenido)
 	var salida="",actual,youtube
 	var div = document.createElement("div")
 	var div_h1 = document.createElement("div")
+	var div_tablas = document.createElement("div")
 	var h1 = document.createElement("h1")
 	h1.innerHTML = título_youtube
 	videos.map(x=>{
@@ -80,11 +81,11 @@ function generar_youtube(contenido)
 
 		tr.appendChild(td)
 		tabla.appendChild(tr)
-		div.appendChild(tabla)	
+		div_tablas.appendChild(tabla)	
 	})
 	div_h1.appendChild(h1)
 	div.appendChild(div_h1)
-	div.appendChild(tabla)
+	div.appendChild(div_tablas)
 	contenido.appendChild(div)
 	return contenido
 }
