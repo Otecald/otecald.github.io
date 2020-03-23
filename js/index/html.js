@@ -35,8 +35,7 @@ function cambiar_visibilidad_contenido(contenido){
 		}
 	}
 }
-function mostrar(esto)
-{
+function mostrar(esto){
 	var id = +esto.id.slice(1)
 	var nombre_de_contenido = "#mostrar"+id
 	var contenido = document.querySelector(nombre_de_contenido)
@@ -52,20 +51,15 @@ function mostrar(esto)
 		}
 	}
 }
-function color(esto,booleano)
-{
-	if(booleano)
-	{
+function color(esto,booleano){
+	if(booleano){
 		esto.style.color="7fee"
 		esto.style.cursor="hand"
-	}
-	else
-	{
+	}else{
 		esto.style.color="7efe"
 	}
 }
-function cargar_versión()
-{
+function cargar_versión(){
 	var versión = document.querySelector("#v1")
 	var contenido = document.querySelector(".contenido")
 	mostrar(versión)
@@ -74,8 +68,7 @@ function cargar_versión()
 	var texto_versión_actual = mensaje + texto_versión
 	versión.innerHTML = texto_versión_actual
 }
-function cargar_todo()
-{
+function cargar_todo(){
 	cargar_versión()
 }
 function iniciar(callback,opciones){
