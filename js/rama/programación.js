@@ -50,16 +50,15 @@ function generar_programación(contenido)
 		a.setAttribute("href",url+x.enlace)
 		tabla.setAttribute("class","tabla_centrada")
 
-		td.appenChild(div_td)
-
-		foto.appenChild(a)
-		div_foto.appenChild(foto)
-		td.appenChild(div_foto)
-
-		td.appenChild(h4)
-		tr.appenChild(td)
-		tabla.appenChild(tr)
-		div.appenChild(tabla)
+		td       .appendChild(div_td)
+		foto     .appendChild(a)
+		div_foto .appendChild(foto)
+		td       .appendChild(div_foto)
+		td       .appendChild(h4)
+		tr       .appendChild(td)
+		tabla    .appendChild(tr)
+		div      .appendChild(tabla)
+		contenido.appendChild(div)
 	})
-	return contenido.appendChild(div)
+	return contenido
 }
