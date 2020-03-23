@@ -66,6 +66,7 @@ function color(esto,booleano)
 }
 function cargar_versión()
 {
+	console.log("Cargando versión")
 	var contenido = document.querySelector(".contenido")
 	generar_versiones(contenido)
 
@@ -80,7 +81,7 @@ function cargar_todo()
 {
 	cargar_versión()
 }
-function iniciar(callback,puede_depurar){
+function iniciar(callback,opciones){
 	var iniciado = false
 	var contador = 0
 	var errores = []
@@ -89,12 +90,11 @@ function iniciar(callback,puede_depurar){
 			callback()
 			iniciado = true
 		}catch(e){
-			if(puede_depurar){
+			if(opciones.puede_depurar){
 				console.log(e)
 			}
 			errores.push(e)
-			++contador
-			if(contador==1000){
+			if(++contador==1000){
 				clearInterval(intervalo)
 				var depurado = (function mostrar_errores(){
 					if(errores.length>0){
@@ -106,11 +106,15 @@ function iniciar(callback,puede_depurar){
 		}
 		if(iniciado){
 			clearInterval(intervalo)
-			if(puede_depurar){
+			if(opciones.puede_depurar){
 				console.log(iniciado,contador)
 			}
 		}
-	},20)
+	},opciones && opciones.milisegundos?opciones.milisegundos:0)
 	return intervalo
 }
-iniciar(cargar_todo)
+var opciones_iniciar = {
+	milisegundos: 100,
+	puede_depurar: false
+}
+iniciar(cargar_todo,opciones_iniciar)
