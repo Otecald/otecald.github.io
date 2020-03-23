@@ -35,49 +35,56 @@ var videos = [
 
 function generar_youtube(contenido)
 {
+	var título_youtube = "Mis videos de Youtube"
 	var salida="",actual,youtube
 	var div = document.createElement(div)
+	var div_h1 = document.createElement(div)
+	var h1 = document.createElement(h1)
+	h1.innerHTML = h1
 	videos.map(x=>{
 		var url = x.url
 		var url_video = "https://www.youtube.com/watch?v=" + url
 		var imagen = "https://i.ytimg.com/vi/" + url + "/" + ( es_máximo?"maxres":"hq" + "default.jpg" )
 
 		var es_máximo = x.máximo==true
-		var es_máximo = false // Se anula 
+		var es_máximo = false // Se anula
 
-		var tabla = document.createElement("table")
-		var tr = document.createElement("tr")
-		var td = document.createElement("td")
-		var div_a = document.createElement("div")
-		var div_b = document.createElement("div")
-		var a_a = document.createElement("a")
-		var a_b = document.createElement("a")
-		var img = document.createElement("img")
+		var tabla =     document.createElement("table")
+		var tr =        document.createElement("tr")
+		var td =        document.createElement("td")
+		var div_img =   document.createElement("div")
+		var div_texto = document.createElement("div")
+		var a_img =     document.createElement("a")
+		var a_texto =   document.createElement("a")
+		var img =       document.createElement("img")
 
 		tabla.classList.add("yt")
 		tabla.classList.add("tabla_centrada")
 
-		a_a.setAttribute("target","_blank")
-		a_b.setAttribute("target","_blank")
+		a_img  .setAttribute("target","_blank")
+		a_texto.setAttribute("target","_blank")
 
-		a_a.setAttribute("href",url_video)
-		a_b.setAttribute("href",url_video)
+		a_img  .setAttribute("href",url_video)
+		a_texto.setAttribute("href",url_video)
 
 		img.setAttribute("src",imagen)
 
-		a_b.innerHTML = x.título
+		a_texto.innerHTML = x.título
 
-		a_a.appendChild(img)
-		div_a.appendChild(a_a)
-		td.appendChild(div_a)
+		a_img  .appendChild(img)
+		div_img.appendChild(a_img)
+		td     .appendChild(div_img)
 
-		div_b.appendChild(a_b)
-		td.appendChild(div_b)
+		div_texto.appendChild(a_texto)
+		td       .appendChild(div_texto)
 
 		tr.appendChild(td)
 		tabla.appendChild(tr)
-		div.appendChild(tabla)	
+		div_texto.appendChild(tabla)	
 	})
+	div_h1.appendChild(h1)
+	div.appendChild(div_h1)
+	div.appendChild(div_c)
 	contenido.appendChild(div)
 	return contenido
 }
