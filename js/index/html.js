@@ -41,31 +41,28 @@ function mostrar(esto)
 	var nombre_de_contenido = "#mostrar"+id
 	var contenido = document.querySelector(nombre_de_contenido)
 	var está_cargado = contenido.classList.contains("cargado")
+	var título_youtube = "Mis videos de Youtube"
 	cambiar_visibilidad_contenido(contenido,id)
 	if(!está_cargado){
 		switch(id){
-			case 1:
-				contenido.innerHTML=generarVersiones()
-			;break;case 2:
-				contenido.innerHTML="<div>Mis videos de Youtube</div><div>"+generarYoutube()+"</div>"
-			;break;case 3:
-				contenido.innerHTML="<div>"+generarProgramación()+"</div>"
-			;break;
+			case 1:generar_versiones   (contenido);break;
+			case 2:generar_youtube     (contenido,título_youtube);break;
+			case 3:generar_programación(contenido);break;
 		}
 		contenido.classList.add("cargado")
 	}
 }
-function cargarVersión()
+function cargar_versión()
 {
-	mostrar1.innerHTML=generarVersiones()
+	mostrar1.innerHTML=generar_versiones()
 	var salida="Versión actual: "
 	var versión=mostrar1.getElementsByTagName("div")[0].innerHTML.split(" ")[0]
 	var actual=salida+versión
 	v1.innerHTML=actual
 }
-function cargarTodo()
+function cargar_todo()
 {
-	cargarVersión()
+	cargar_versión()
 }
 function color(esto,booleano)
 {
