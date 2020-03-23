@@ -76,19 +76,34 @@ function cargar_todo()
 {
 	cargar_versión()
 }
-function iniciar(callback,mostrar_error){
+function iniciar(callback,puede_depurar){
 	var iniciado = false
+	var contador = 0
+	var errores = []
 	var intervalo = setInterval(function(){
 		try{
 			callback()
 			iniciado = true
 		}catch(e){
-			if(mostrar_error){
+			if(puede_depurar){
 				console.log(e)
+			}
+			errores.push(e)
+			if(contador==1000){
+				clearInterval(intervalo)
+				setTimeout(function mostrar_errores(){
+					if(errores.length>0){
+						console.log(errores.shift())
+						setTimeout(mostrar_errores,50)
+					}
+				},50)
 			}
 		}
 		if(iniciado){
 			clearInterval(intervalo)
+			if(puede_depurar){
+				console.log(iniciado,contador)
+			}
 		}
 	})
 	return intervalo
