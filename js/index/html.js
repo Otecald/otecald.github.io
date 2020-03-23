@@ -86,7 +86,7 @@ function iniciar(callback,opciones){
 			callback()
 			iniciado = true
 		}catch(e){
-			if(opciones.puede_depurar){
+			if(opciones && opciones.puede_depurar){
 				console.log(e)
 			}
 			errores.push(e)
@@ -102,7 +102,7 @@ function iniciar(callback,opciones){
 		}
 		if(iniciado){
 			clearInterval(intervalo)
-			if(opciones.puede_depurar){
+			if(opciones && opciones.puede_depurar){
 				console.log(iniciado,contador)
 			}
 		}
