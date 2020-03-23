@@ -1,66 +1,65 @@
-﻿var datosProgramación=[
+var datos_programación = [
 	{
-		título:"Chatovod Mod",
+		título:"Charlavod",
 		descripción:"Extensión del Chrome que le da mejoras a Chatovod.",
-		foto:"js/proyecto/Chatovod/Chatovod_Mod/Thumb.png",
-		enlace:"js/proyecto/Chatovod/Chatovod_Mod/Chatovod_Mod.html"
+		foto  :"charlavod/mod/Thumb.png",
+		enlace:"charlavod/mod/Chatovod_Mod.html"
 	},{
 		título:"Bot conversacional para Chatovod",
 		descripción:"Bot para Chatovod, OtecaldBot (no funciona)",
-		foto:"js/proyecto/OtecaldBot/Thumb.png",
-		enlace:"js/proyecto/OtecaldBot/Bot.html"
+		foto  :"OtecaldBot/Thumb.png",
+		enlace:"OtecaldBot/Bot.html"
 	},{
 		título:"Secuencia Binaria",
 		descripción:"Javascript que genera una secuencia binaria irracional única, parecida a pi.",
-		foto:"js/proyecto/Secuencia Binaria/Thumb.png",
-		enlace:"js/proyecto/Secuencia Binaria/Secuencia Binaria.html"
+		foto  :"Secuencia Binaria/Thumb.png",
+		enlace:"Secuencia Binaria/Secuencia Binaria.html"
 	},{
 		título:"Base 64 hacia palabras de Wikcionario y viceversa.",
 		descripción:"Convierte código base 64 a palabras de Wikcionario y palabras a base 64.",
-		foto:"js/proyecto/Base64_Wikcionario/Thumb.png",
-		enlace:"rawgit Base64_hacia_Palabras/HTML.html"
+		foto  :"Base64_Wikcionario/Thumb.png",
+		enlace:"Base64_Wikcionario"
 	},{
 		título:"Diferencia de Fechas",
 		descripción:"Javascript que obtiene la diferencia que hay entre dos fechas.",
-		foto:"js/proyecto/Diferencia%20de%20Fechas/Thumb.png",
-		enlace:"js/proyecto/Diferencia%20de%20Fechas/Diferencia%20de%20fechas.html"
+		foto  :"Diferencia%20de%20Fechas/Thumb.png",
+		enlace:"Diferencia%20de%20Fechas/Diferencia%20de%20fechas.html"
 	}
 ]
-
-function rutaActual()
+function generarProgramación(datos_programación)
 {
-	var actual=location.href
-	padre=actual.slice(0,actual.lastIndexOf("/")+1)
-	return padre
-}
+	var url = "/js/proyecto/"
 
+	var div = document.createElement("div")
+	datos_programación.map(x=>{
+		var tabla = document.createElement("table")
+		var tr = document.createElement("tr")
+		var td = document.createElement("td")
+		var h4 = document.createElement("h4")
+		var div_td = document.createElement("div")
+		var div_foto = document.createElement("div")
+		var a = document.createElement("a")
+		var foto = document.createElement("img")
 
-function generarProgramación()
-{
-	var i
-	var salida="",actual,título,texto,hospedaje,miniatura,foto,enlace,encuentraTexto
-	var longitud=datosProgramación.length
-	local=rutaActual()
-	miniatura=local
-	for(i=0;i<longitud;i++)
-	{
-		actual=datosProgramación[i]
-		título=actual.título
-		texto=actual.descripción
-		enlace=actual.enlace
-		encuentraTexto=enlace.search("rawgit")>=0
-		if(encuentraTexto)
-		{
-			enlace=enlace.split("rawgit ")[1]
-			hospedaje="https://otecald.github.io/js/proyecto/"
-		}
-		else
-		{
-			hospedaje=local
-		}
-		enlace=hospedaje+enlace
-		foto=miniatura+actual.foto		
-		salida += '<table class="tabla_centrada"><tr><td>' + título + '</td></tr><tr><td>' + texto + '</td></tr><tr><td><a target="_blank" href="' + enlace + '" ><img src="' + foto + '" ></img></a></td></tr></table>'
-	}
-	return salida
+		tabla.setAttribute("class","tabla_centrada")
+		h4.innerHTML = x.título
+		div_td.innerHTML = x.descripción
+
+		foto.src = url+x.foto
+		a.setAttribute("target","_blank")
+		a.setAttribute("href",url+x.enlace)
+		tabla.setAttribute("class","tabla_centrada")
+
+		td.appenChild(div_td)
+
+		foto.appenChild(a)
+		div_foto.appenChild(foto)
+		td.appenChild(div_foto)
+
+		td.appenChild(h4)
+		tr.appenChild(td)
+		tabla.appenChild(tr)
+		div.appenChild(tabla)
+	})
+	return div
 }
