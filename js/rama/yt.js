@@ -84,7 +84,7 @@ function generar_youtube(contenido)
 	})
 	div_h1.appendChild(h1)
 	div.appendChild(div_h1)
-	div.appendChild(div_c)
+	div.appendChild(tabla)
 	contenido.appendChild(div)
 	return contenido
 }
