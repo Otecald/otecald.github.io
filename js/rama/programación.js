@@ -26,7 +26,7 @@ var datos_programación = [
 		enlace:"Diferencia%20de%20Fechas/Diferencia%20de%20fechas.html"
 	}
 ]
-function generarProgramación(datos_programación)
+function generar_programación(contenido)
 {
 	var url = "/js/proyecto/"
 
@@ -61,5 +61,5 @@ function generarProgramación(datos_programación)
 		tabla.appenChild(tr)
 		div.appenChild(tabla)
 	})
-	return div
+	return contenido.appendChild(div)
 }
