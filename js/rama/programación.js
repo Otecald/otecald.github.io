@@ -48,7 +48,6 @@ function generar_programación(contenido)
 		foto.src = url+x.foto
 		a.setAttribute("target","_blank")
 		a.setAttribute("href",url+x.enlace)
-		tabla.setAttribute("class","tabla_centrada")
 
 		td       .appendChild(div_td)
 
