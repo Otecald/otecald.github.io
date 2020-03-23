@@ -41,7 +41,7 @@ function generar_programación(contenido)
 		var a = document.createElement("a")
 		var foto = document.createElement("img")
 
-		tabla.setAttribute("class","tabla_centrada")
+		tabla.classList.add("tabla_centrada")
 		h4.innerHTML = x.título
 		div_td.innerHTML = x.descripción
 
