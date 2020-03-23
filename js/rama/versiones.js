@@ -29,6 +29,5 @@ function generar_versiones(contenido){
 		div_a.appendChild(div_b)
 	})
 	contenido.appendChild(div_a)
-	console.error("Vez",document.querySelector(".contenido").textContent)
 	return contenido
 }
