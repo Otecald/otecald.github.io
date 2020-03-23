@@ -1,5 +1,5 @@
-﻿var datosVersiones=[
-	{versión:"1.16",fecha:"2020/03/20 Viernes",descripción:"<a target='_blank' href='https://github.com/Otecald/otecald.github.io/'>Agregada versión GitHub</a>."},
+var datos_versiones = [
+	{versión:"1.16",fecha:"2020/03/20 Viernes",descripción:"<a target='_blank' href='https://github.com/otecald/otecald.github.io/'>Agregada versión GitHub</a>."},
 	{versión:"1.15",fecha:"2016/08/27 22:30",descripción:"Cambiada la categoría Javascript por programación."},
 	{versión:"1.14",fecha:"2016/08/27 17:03",descripción:"Agregado mi canal de Youtube"},
 	{versión:"1.13",fecha:"2016/08/27",descripción:"Quitado fondo."},
@@ -16,21 +16,24 @@
 	{versión:"1.1", descripción:"Fondo de página añadido."},
 	{versión:"1", descripción:"Mensaje de bienvenida."}
 ]
-
-function generarVersiones()
+function obtener_valores_de_objeto(x){
+	return Object.keys(x).map(x=>y[x])
+}
+function generar_versiones(contenido)
 {
-	var i
-	var salida="",actual,youtube,vínculo
-	var longitud=datosVersiones.length
-	for(i=0;i<longitud;i++)
-	{
-		actual=datosVersiones[i]
-		versión=actual.versión
-		fecha=actual.fecha
-		texto=actual.descripción
-		if(fecha==undefined){fecha="Tiempo desconocido."}
-		salida+="<div align=\"left\">"+versión+" - "+fecha+" - "+texto+"</div>"
-	}
-	return salida
+	var div_a = document.createElement(div)
+	datos_versiones.map(x=>{
+		if(fecha==undefined){
+			fecha = ""
+		}
+		var div_b = document.createElement(div)
+
+		div_b.setAttribute("align","left")
+		div_b.innerHTML = obtener_valores_de_objeto(x).join(" - ")
+
+		div_a.appendChild(div_b)
+		contenido.appendChild(div_a)
+	})
+	return contenido
 }
 
