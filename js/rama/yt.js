@@ -64,7 +64,7 @@ function generar_youtube(contenido)
 		a_a.setAttribute("href",url_video)
 		a_b.setAttribute("href",url_video)
 
-		img.setAttribute("src","imagen)
+		img.setAttribute("src",imagen)
 
 		a_b.innerHTML = x.título
 
