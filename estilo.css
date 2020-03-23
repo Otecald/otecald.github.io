@@ -1,12 +1,12 @@
-﻿.headers{
+.headers{
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	z-index: 1;
 }
-.Normal{
-	color: #FFFFFF;
+.normal{
+	color: #bdce;
 }
 body{
 	background-repeat: repeat-y;
@@ -15,23 +15,23 @@ body{
 }
 body,td,th{
 	font-weight: bold;
-	color: #FFFFFF;
+	color: #bcde;
 }
 a:link{
 	text-decoration: none;
-	color: #AABBCC;
+	color: #abce;
 }
 a:visited{
 	text-decoration: none;
-	color: #778899;
+	color: #789e;
 }
 a:hover{
 	text-decoration: underline;
-	color: #DDEEFF;
+	color: #defe;
 }
 a:active{
 	text-decoration: underline;
-	color: #556677;
+	color: #567e;
 }
 .tabla_centrada{
     display: inline-grid;
