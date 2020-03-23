@@ -40,13 +40,12 @@ function mostrar(esto){
 	var nombre_de_contenido = "#mostrar"+id
 	var contenido = document.querySelector(nombre_de_contenido)
 	var está_cargado = contenido.classList.contains("cargado")
-	var título_youtube = "Mis videos de Youtube"
 	cambiar_visibilidad_contenido(contenido,id)
 	if(!está_cargado){
 		contenido.classList.add("cargado")
 		switch(id){
 			case 1:generar_versiones   (contenido);break;
-			case 2:generar_youtube     (contenido,título_youtube);break;
+			case 2:generar_youtube     (contenido);break;
 			case 3:generar_programación(contenido);break;
 		}
 	}
