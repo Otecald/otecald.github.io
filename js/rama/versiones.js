@@ -29,7 +29,7 @@ function generar_versiones(contenido){
 		div_b.innerHTML = obtener_valores_de_objeto(x).join(" - ")
 
 		div_a.appendChild(div_b)
-		contenido.appendChild(div_a)
 	})
+	contenido.appendChild(div_a)
 	return contenido
 }
