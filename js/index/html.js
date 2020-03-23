@@ -56,12 +56,12 @@ function color(esto,booleano)
 {
 	if(booleano)
 	{
-		esto.style.color="7fffe"
+		esto.style.color="7fee"
 		esto.style.cursor="hand"
 	}
 	else
 	{
-		esto.style.color="7fffe"
+		esto.style.color="7efe"
 	}
 }
 function cargar_versión()
