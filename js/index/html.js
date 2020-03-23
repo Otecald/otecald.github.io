@@ -89,14 +89,15 @@ function iniciar(callback,puede_depurar){
 				console.log(e)
 			}
 			errores.push(e)
+			++contador
 			if(contador==1000){
 				clearInterval(intervalo)
-				setTimeout(function mostrar_errores(){
+				(function mostrar_errores(){
 					if(errores.length>0){
 						console.log(errores.shift())
 						setTimeout(mostrar_errores,50)
 					}
-				},50)
+				})()
 			}
 		}
 		if(iniciado){
