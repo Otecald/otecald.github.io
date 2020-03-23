@@ -2,7 +2,7 @@ var datos_programación = [
 	{
 		título:"Charlavod",
 		descripción:"Extensión del Chrome que le da mejoras a Chatovod.",
-		foto  :"charlavod/mod/Thumb.png",
+		foto  :"charlavod/mod/thumb.png",
 		enlace:"charlavod/mod/Chatovod_Mod.html"
 	},{
 		título:"Bot conversacional para Chatovod",
@@ -51,9 +51,11 @@ function generar_programación(contenido)
 		tabla.setAttribute("class","tabla_centrada")
 
 		td       .appendChild(div_td)
-		foto     .appendChild(a)
-		div_foto .appendChild(foto)
+
+		a        .appendChild(foto)
+		div_foto .appendChild(a)
 		td       .appendChild(div_foto)
+
 		td       .appendChild(h4)
 		tr       .appendChild(td)
 		tabla    .appendChild(tr)
