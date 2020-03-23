@@ -40,11 +40,10 @@ function generar_youtube(contenido)
 	videos.map(x=>{
 		var url = x.url
 		var url_video = "https://www.youtube.com/watch?v=" + url
+		var imagen = "https://i.ytimg.com/vi/" + url + "/" + ( es_máximo?"maxres":"hq" + "default.jpg" )
 
 		var es_máximo = x.máximo==true
 		var es_máximo = false // Se anula 
-
-		var imagen = "https://i.ytimg.com/vi/" + url + "/" + es_máximo?"maxres":"hq" + "default.jpg"
 
 		var tabla = document.createElement("table")
 		var tr = document.createElement("tr")
