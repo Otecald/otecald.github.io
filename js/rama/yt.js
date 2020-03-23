@@ -37,10 +37,10 @@ function generar_youtube(contenido)
 {
 	var título_youtube = "Mis videos de Youtube"
 	var salida="",actual,youtube
-	var div = document.createElement(div)
-	var div_h1 = document.createElement(div)
-	var h1 = document.createElement(h1)
-	h1.innerHTML = h1
+	var div = document.createElement("div")
+	var div_h1 = document.createElement("div")
+	var h1 = document.createElement("h1")
+	h1.innerHTML = título_youtube
 	videos.map(x=>{
 		var url = x.url
 		var url_video = "https://www.youtube.com/watch?v=" + url
