@@ -1,4 +1,4 @@
-﻿var datosYoutube=[
+var videos = [
 	{"vínculo":"U_bxVetWnZI","máximo":"0","título":"Super Checker"},
 	{"vínculo":"AUc97PlF8Ho","máximo":"0","título":"Tierra 3D con atmósfera"},
 	{"vínculo":"hGPZICR9p5w","máximo":"1","título":"Park Racer"},
@@ -33,23 +33,28 @@
 	{"vínculo":"JhBA7Z9yc7I","máximo":"1","título":"Usuarios de StackOverflow en Español"}
 ]
 
-function generarYoutube()
+function generar_youtube(contenido)
 {
-	var i
 	var salida="",actual,youtube,vínculo
-	var longitud=datosYoutube.length
-	for(i=0;i<longitud;i++)
-	{
-		actual=datosYoutube[i]
+	var div = document.createElement(div)
+	videos.map(x=>{
+		var tabla = document.createElement("table")
+		tabla.classList.add("yt")
+		tabla.classList.add("tabla_centrada")
+		div.appendChild(table)
+
+		actual=videos[i]
 		vínculo=actual.vínculo
 		youtube="https://www.youtube.com/watch?v="+vínculo
-		esMáximo=actual.máximo==true
-		esMáximo=false
+		es_máximo=actual.máximo==true
+		es_máximo=false
 		imagen="https://i.ytimg.com/vi/"+vínculo+"/"
-		imagen+=esMáximo?"maxres":"hq"
+		imagen+=es_máximo?"maxres":"hq"
 		imagen+="default.jpg"
-		salida+='<table class="yt tabla_centrada" ><tr><td><a target="_blank" href="' + youtube + '" ><img src="' + imagen + '" ></img></a></td></tr><tr><td><a href="' + youtube + '" >' + actual.título + '</a></td></tr></table>\n'
-	}
-	return salida
+		salida+='class="yt tabla_centrada" ><tr><td><a target="_blank" href="' + youtube + '" ><img src="' + imagen + '" ></img></a></td></tr><tr><td><a href="' + youtube + '" >' + actual.título + '</a></td></tr><'
+		
+	})
+	contenido.appendChild(div)
+	return contenido
 }
 
