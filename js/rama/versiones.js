@@ -16,16 +16,13 @@ var datos_versiones = [
 	{versión:"1.1", descripción:"Fondo de página añadido."},
 	{versión:"1", descripción:"Mensaje de bienvenida."}
 ]
+
 function obtener_valores_de_objeto(x){
 	return Object.keys(x).map(x=>y[x])
 }
-function generar_versiones(contenido)
-{
+function generar_versiones(contenido){
 	var div_a = document.createElement("div")
 	datos_versiones.map(x=>{
-		if(fecha==undefined){
-			fecha = ""
-		}
 		var div_b = document.createElement("div")
 
 		div_b.setAttribute("align","left")
@@ -36,4 +33,3 @@ function generar_versiones(contenido)
 	})
 	return contenido
 }
-
