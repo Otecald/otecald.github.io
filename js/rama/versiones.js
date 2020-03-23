@@ -17,8 +17,8 @@ var datos_versiones = [
 	{versión:"1", descripción:"Mensaje de bienvenida."}
 ]
 
-function obtener_valores_de_objeto(x){
-	return Object.keys(x).map(x=>y[x])
+function obtener_valores_de_objeto(y){
+	return Object.keys(y).map(x=>y[x])
 }
 function generar_versiones(contenido){
 	var div_a = document.createElement("div")
