@@ -27,6 +27,7 @@ function generar_versiones(contenido){
 
 		div_b.setAttribute("align","left")
 		div_b.innerHTML = obtener_valores_de_objeto(x).join(" - ")
+		console.error(div_b,document.querySelector(".contenido"))
 
 		div_a.appendChild(div_b)
 	})
