@@ -9,6 +9,9 @@ body{
 	background-repeat: repeat-y;
 	background-color: #000;
 	background-attachment: fixed;
+	
+/* Para que al cargar contenido se mantenga siempre el mismo ancho. */
+	overflow: scroll; 
 }
 body,td,th{
 	font-weight: bold;
