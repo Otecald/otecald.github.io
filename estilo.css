@@ -11,7 +11,7 @@ body{
 	background-attachment: fixed;
 	
 /* Para que al cargar contenido se mantenga siempre el mismo ancho. */
-	overflow: scroll; 
+	overflow-y: scroll; 
 }
 body,td,th{
 	font-weight: bold;
